@@ -11,14 +11,13 @@ public class FornecedorComposite implements FornecedorDeEnergia {
 	}
 	
 	@Override
-	public void fornecer() {
-		/*
+	public double fornecer() {
+		
 		for (FornecedorDeEnergia fe : fornecedoresDeEnergia) {
 			fe.fornecer();
 		}
-		*/
-		fornecedoresDeEnergia.forEach(fe -> fe.fornecer());
 		
+		return (Double) null;
 	}
 
 	public void adicionarFornecedor(FornecedorDeEnergia fornecedor) {
